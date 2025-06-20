@@ -47,6 +47,8 @@ pip install streamlit plotly pandas numpy seaborn matplotlib
 ```bash
 streamlit run app.py
 ``` 
+## url demo:
+<a href="https://xinaydatos.streamlit.app/">https://xinaydatos.streamlit.app</a>
 
-img demo
+- img demo
 <img src='./dashboard.png'>
