@@ -30,7 +30,8 @@ for fecha in fechas:
             }
         )
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
+df = pd.read_csv("data_set.csv", parse_dates=["fecha"])
 df['venta_total'] = df['cantidad'] * df['precio_unitario']
 
 print(f"Shape del dataset: {df.shape} ")
