@@ -88,7 +88,7 @@ st.set_page_config(page_title="Dashboard de Ventas", page_icon="📊" , layout="
 
 # titulo principal
 st.title("📊 Dashboard de Analísis de Ventas")
-st.title("Código Futuro - 2025")
+
 st.markdown("---")
 
 # barras laterales para los filtros
@@ -136,3 +136,6 @@ with col2:
 
 # Grafico completo en la parte superior
 st.plotly_chart(fig_dist, use_container_width=True)
+url = "https://codigofuturo.com/wp-content/uploads/2025/05/logotipo.webp"
+
+st.image(url, caption="Logotipo", use_column_width=True)
