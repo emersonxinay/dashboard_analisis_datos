@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 # creamos datos sinteticos 
 np.random.seed(42)
-fechas = pd.date_range('2024-01-01', '2025-07-31', freq='D')
+fechas = pd.date_range('2023-01-01', '2024-12-31', freq='D')
 n_productos = ['Laptop', 'Mouse', 'Monitor', 'Auriculares']
 regiones = ['Norte', 'Sur', 'Este', 'Oeste', 'Centro', 'Oriente']
 
