@@ -7,6 +7,9 @@ from plotly.subplots import make_subplots
 import seaborn as sns 
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+import requests
+from io import BytesIO
+from PIL import Image
 
 # creamos datos sinteticos 
 np.random.seed(42)
@@ -136,6 +139,11 @@ with col2:
 
 # Grafico completo en la parte superior
 st.plotly_chart(fig_dist, use_container_width=True)
+# Imagen tipo logo, para usar en el "footer"
 url = "https://codigofuturo.com/wp-content/uploads/2025/05/logotipo.webp"
 
-st.image(url, caption="Logotipo", use_column_width=True)
+# Mostrar imagen con ancho fijo (por ejemplo, 100 píxeles)
+st.image(url, width=100)
+
+# Agregar un poco de espacio abajo (opcional)
+st.markdown("<br><br><br>", unsafe_allow_html=True)
