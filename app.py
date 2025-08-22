@@ -143,7 +143,7 @@ st.plotly_chart(fig_dist, use_container_width=True)
 url = "https://codigofuturo.com/wp-content/uploads/2025/05/logotipo.webp"
 
 # Mostrar imagen con ancho fijo (por ejemplo, 100 píxeles)
-st.image(url, width=100)
+st.image(url, width=300)
 
 # Agregar un poco de espacio abajo (opcional)
 st.markdown("<br><br><br>", unsafe_allow_html=True)
