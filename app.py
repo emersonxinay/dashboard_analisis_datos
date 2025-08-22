@@ -88,6 +88,7 @@ st.set_page_config(page_title="Dashboard de Ventas", page_icon="📊" , layout="
 
 # titulo principal
 st.title("📊 Dashboard de Analísis de Ventas")
+st.title("Código Futuro - 2025")
 st.markdown("---")
 
 # barras laterales para los filtros
@@ -121,7 +122,7 @@ with col4:
     crecimiento = ((df_filtered[df_filtered['fecha'] >= '2024-01-01']['venta_total'].sum()/
                     df_filtered[df_filtered['fecha']<'2024-01-01']['venta_total'].sum())-1)*100
     
-    st.metric("Crecimiento 2025", f"{crecimiento:.1f}%")
+    st.metric("Crecimiento 2024", f"{crecimiento:.1f}%")
 
 
 # layouts con 2 columnas 
